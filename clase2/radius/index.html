@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carlos Rodrigo Form</title>
+  </head>
+
+  <body>
+    <form action="pagina2get.php" method="get">
+      Formulario con GET
+
+      <input type="radio" id="suma" name="slOperacion" value="+" />
+      <label for="suma">+</label>
+
+      <input type="radio" id="resta" name="slOperacion" value="-" />
+      <label for="resta">-</label>
+
+      <input type="radio" id="multiplicacion" name="slOperacion" value="*" />
+      <label for="multiplicacion">*</label>
+
+      <input type="radio" id="division" name="slOperacion" value="/" />
+      <label for="division">/</label>
+
+      <label for="formNum1">Numero 1</label>
+      <input type="number" name="formNum1" id="formNum1" />
+
+      <label for="formNum2">Numero 2</label>
+      <input type="number" name="formNum2" id="formNum2" />
+
+      <input type="submit" value="Subir" />
+      <input type="reset" value="Reiniciar" />
+    </form>
+
+    <form action="pagina2post.php" method="post">
+      Formulario con POST
+      <select name="slOperacion" id="slOperacion">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <label for="formNum1">Numero 1</label>
+      <input type="number" name="formNum1" id="formNum1" required />
+      <label for="formNum2">Numero 2</label>
+      <input type="number" name="formNum2" id="formNum2" required />
+      <input type="submit" value="Subir" />
+      <input type="reset" value="Reiniciar" />
+    </form>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
+
+<!-- Carlos Rodrigo Briseño Ruiz -->
