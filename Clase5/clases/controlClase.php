@@ -8,7 +8,6 @@
     $objClase->setNombre($nombre);
     $objClase->setApellido($apellido);
 
-    echo $objClase->getNombreCompleto();
-
+    echo "El nombre completo es: " . $objClase->getNombreCompleto();
     
 ?>
